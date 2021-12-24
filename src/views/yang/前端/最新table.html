@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-bottom: solid 1px black;
+      border-left: solid 1px black;
+    }
+
+    td {
+      border-right: solid 1px black;
+      border-top: solid 1px black;
+      /* width: 190px; */
+      /* width: 80px !important; */
+      /* padding-left: 50px; */
+      /* height: px; */
+
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .table2-container {
+      width: 1200px;
+    }
+    .table1-container {
+      width: 102px
+    }
+    .table1-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+
+    }
+
+    .table1-container td:first-child {
+      background-color: white;
+    }
+
+    .table1-container td:not(:first-child) {
+      visibility: hidden;
+    }
+
+    .table2-container {
+      overflow-x: scroll;
+      z-index: 99;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class='container'>
+    <div class="table1-container"> 
+      <table border=0 cellpadding="0" cellspacing="0">
+        <tr >
+          <td style="border-right: 0;"></td>
+          <td colspan="22" style="padding-left: 600px;">股权信息表</td>
+
+        </tr>
+        <tr align="center">
+          <td style="border-right: 0;"></td>
+          <td colspan="5" align="center">股东基本信息表</td>
+          <td colspan="6" align="center">股东股权状态信息</td>
+          <td colspan="4" align="center">主要股东财务信息</td>
+          <td colspan="6" align="center">主要股东穿透信息</td>
+
+        </tr>
+        <tr>
+          <td align="center"> 
+            <div style="width: 100px">股东名称</div>
+          </td>
+          <td align="center">
+            <div style="width: 100px">证件号码</div>
+          </td>
+          <td align="center">
+              <div style="width: 100px">股东住所</div>
+            </td>
+          <td align="center">
+           <div style="width: 100px"> 持股日期</div>
+          </td>
+          <td align="center"> <div style="width: 100px"> 持股数额</div></td>
+          <td align="center"><div style="width: 100px">持股比例</div></td>
+          <td align="center"><div style="width: 100px"> 持股数额</div></td>
+          <td align="center"><div style="width: 100px"> 股权质押数额</div></td>
+          <td align="center"> <div style="width: 100px"> 股权质押比例</div></td>
+          <td align="center"><div style="width: 100px"> 股权冻结数额</div></td>
+          <td align="center"><div style="width: 100px"> 股权冻结比例</div></td>
+          <td align="center"> <div style="width: 100px"> 股权状态说明</div></td>
+          <td align="center"><div style="width: 100px"> 净利润万元</div></td>
+          <td align="center"><div style="width: 100px"> 资产负债率</div></td>
+          <td align="center"><div style="width: 180px"> 权益性投资占净资产比重</div></td>
+          <td align="center"><div style="width: 140px"> 入股其他银行情况</div></td>
+          <td align="center"><div style="width: 140px"> 主要股东派驻董事</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的实际控制人</div></td>
+          <td align="center"><div style="width: 140px"> 主要股东的关联方</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的控股股东</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的一致行动人</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的最终受益人</div></td>
+        </tr>
+        <tr>
+          <td align="center">测试股东</td>
+          <td>1</td>
+          <div class="tets">
+            <td><a href="http://www.mozilla.com/"><div>试试</div></a></td>
+          </div>
+          <td><a href="https://www.google.com/search?q=%E7%99%BE%E5%BA%A6%E7%BD%91%E5%9D%80&oq=%E7%99%BE%E5%BA%A6%E7%BD%91%E5%9D%80&aqs=chrome..69i57j0.4354j0j7&sourceid=chrome&ie=UTF-8"></a></td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>5555555555555555555566666666666666666666</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555</td>
+          <td>555555555555555555555</td>
+          <td>55555555555555555555544444444444444444444444444444444</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <div class="table2-container"> 
+      <table border=0 cellpadding="0" cellspacing="0">
+        <tr >
+          <td style="border-right: 0;"></td>
+          <td colspan="22" style="padding-left: 600px;">股权信息表</td>
+
+        </tr>
+        <tr align="center">
+          <td style="border-right: 0;"></td>
+          <td colspan="5" align="center">股东基本信息表</td>
+          <td colspan="6" align="center">股东股权状态信息</td>
+          <td colspan="4" align="center">主要股东财务信息</td>
+          <td colspan="6" align="center">主要股东穿透信息</td>
+
+        </tr>
+        <tr>
+          <td align="center"> 
+            <div style="width: 100px">股东名称</div>
+          </td>
+          <td align="center">
+            <div style="width: 100px">证件号码</div>
+          </td>
+          <td align="center">
+              <div style="width: 100px">股东住所</div>
+            </td>
+          <td align="center">
+           <div style="width: 100px"> 持股日期</div>
+          </td>
+          <td align="center"> <div style="width: 100px"> 持股数额</div></td>
+          <td align="center"><div style="width: 100px">持股比例</div></td>
+          <td align="center"><div style="width: 100px"> 持股数额</div></td>
+          <td align="center"><div style="width: 100px"> 股权质押数额</div></td>
+          <td align="center"> <div style="width: 100px"> 股权质押比例</div></td>
+          <td align="center"><div style="width: 100px"> 股权冻结数额</div></td>
+          <td align="center"><div style="width: 100px"> 股权冻结比例</div></td>
+          <td align="center"> <div style="width: 100px"> 股权状态说明</div></td>
+          <td align="center"><div style="width: 100px"> 净利润万元</div></td>
+          <td align="center"><div style="width: 100px"> 资产负债率</div></td>
+          <td align="center"><div style="width: 180px"> 权益性投资占净资产比重</div></td>
+          <td align="center"><div style="width: 140px"> 入股其他银行情况</div></td>
+          <td align="center"><div style="width: 140px"> 主要股东派驻董事</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的实际控制人</div></td>
+          <td align="center"><div style="width: 140px"> 主要股东的关联方</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的控股股东</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的一致行动人</div></td>
+          <td align="center"><div style="width: 160px"> 主要股东的最终受益人</div></td>
+        </tr>
+        <tr>
+          <td align="center">测试股东</td>
+          <td>1</td>
+          <div class="tets">
+            <td><a href="http://www.mozilla.com/"><div>试试</div></a></td>
+          </div>
+          <td><a href="https://www.google.com/search?q=%E7%99%BE%E5%BA%A6%E7%BD%91%E5%9D%80&oq=%E7%99%BE%E5%BA%A6%E7%BD%91%E5%9D%80&aqs=chrome..69i57j0.4354j0j7&sourceid=chrome&ie=UTF-8">点击</a></td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>5555555555555555555566666666666666666666</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555</td>
+          <td>555555555555555555555</td>
+          <td>55555555555555555555544444444444444444444444444444444</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td align="center">股东A</td>
+          <td>1</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>555555555555555555555</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <div class="test">
+      <a href="http://www.mozilla.com/">External Link</a>
+    </div>
+  </div>
+</body>
+
+</html>

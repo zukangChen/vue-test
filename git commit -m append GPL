@@ -1,0 +1,10 @@
+[1mdiff --git a/readme.txt b/readme.txt[m
+[1mindex 8840c18..0b3d8a4 100644[m
+[1m--- a/readme.txt[m
+[1m+++ b/readme.txt[m
+[36m@@ -1,2 +1,2 @@[m
+ git is a distributed version control system.[m
+[31m-git is a free software.[m
+\ No newline at end of file[m
+[32m+[m[32mgit is a free software uder the GPL.[m
+\ No newline at end of file[m
